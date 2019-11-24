@@ -1,0 +1,130 @@
+Country of president,President,Location country,Location city,Date_start,Date end,Subject,President popularity,US favourability,
+USA,W. BUSH,Mexico,San Cristobal,16.2.2001,16.2.2001,Meeting with President Fox.,-,68,
+USA,W. BUSH,Spain,Madrid,12.6.2001,13.6.2001,Met with King Juan Carlos I and President Aznar.,-,50,
+USA,W. BUSH,Poland,Warsaw,15.6.2001,16.6.2001,State visit.,-,86,
+USA,W. BUSH,Slovenia,Kranj,16.6.2001,16.6.2001,Met with Prime Minister Drnovsek and Russian President Putin.,-,,
+USA,W. BUSH,United Kingdom,"London, Chequers, Halton, Brize Norton",18.7.2001,20.7.2001,Met with Prime Minister Blain and Queen Elizabeth II.,30,83,
+USA,W. BUSH,Japan,Tokyo,17.2.2002,19.2.2002,Met with Prime Minister Koizumi and Emperor Akihito. Addressed the Diet.,-,72,
+USA,W. BUSH,South Korea,"Seoul, Dorasan, Osan",19.2.2002,21.2.2002,"Met with President Kin Dae-Jung, visited the Demilitarized Zone, addressed 
+U.S. military personnel.",-,52,
+USA,W. BUSH,China,Beijing,21.2.2002,22.2.2002,Met with President Jiang and Premier Zhu.,-,,
+USA,W. BUSH,Mexico,Monterrey,21.3.2002,22.3.2002,"Attended the International Conference on Financing for Development and met 
+with President Fox.",-,64,
+USA,W. BUSH,Peru,Lima,23.3.2002,24.3.2002,"Met with the Presidents of Peru, Colombia, and Bolivia, and with the Vice 
+President of Ecuador.",-,,
+USA,W. BUSH,El Salvador,San Salvador,24.3.2002,24.3.2002,Attended a summit meeting with Central American heads of state.,-,,
+USA,W. BUSH,Germany,Berlin,22.5.2002,23.5.2002,Met with Chancellor Schroeder and addressed the Bundestag.,33,60,
+USA,W. BUSH,Russia,"Moscow, St. Petersburg",23.5.2002,26.5.2002,Summit meeting with President Putin. Signed strategic arms reduction treaty.,-,61,
+USA,W. BUSH,France,"Paris, St. Mere- Eglise, Colleville",26.5.2002,27.5.2002,Met with President Chirac and delivered a Memorial Day address in Normandy.,20,62,
+USA,W. BUSH,Vatican City,,28.5.2002,28.5.2002,Audience with Pope John Paul II.,-,,
+USA,W. BUSH,Russia,St. Petersburg,22.11.2002,22.11.2002,Met with President Putin.,8,61,
+USA,W. BUSH,Lithuania,Vilnius,22.11.2002,23.11.2002,Met with the Presidents of the Baltic States.,-,,
+USA,W. BUSH,Romania,Bucharest,23.11.2002,23.11.2002,Met with President Iliescu.,-,,
+USA,W. BUSH,Portugal,Terceira Island (Azores),16.3.2003,16.3.2003,"Discussed the Iraq crisis with British Prime Minister Blair, Spanish 
+President Aznar, and Portuguese Prime Minister Durao.",-,,
+USA,W. BUSH,United Kingdom,"Belfast, Hillsborough (Northern Ireland)",7.4.2003,8.4.2003,"Met with Prime Minister Blair to discuss the reconstruction of Iraq. Also 
+met with Irish Prime Minister Ahern and Northern Irish political leaders.",51,70,
+USA,W. BUSH,Poland,"Krakow, Auschwitz-Birkenau",30.5.2003,31.5.2003,"Met with President Kwasniewski and Prime Minister Miller; visited former 
+Nazi concentration camps.",-,,
+USA,W. BUSH,Russia,St. Petersburg,31.5.2003,1.6.2003,"Met with President Putin and attended ceremonies commemorating the city’s 
+300th anniversary.",8,37,
+USA,W. BUSH,Egypt,Sharm el-Sheikh,2.6.2003,3.6.2003,"Attended “Red Sea Summit” with the leaders of Bahrain, Egypt, Jordan, and 
+Saudi Arabia, and with Palestinian Prime Minister Abbas.",-,,
+USA,W. BUSH,Jordan,Aqaba,4.6.2003,4.6.2003,"Attended meetings with Israeli Prime Minister Sharon and Palestinian Prime 
+Minister Abbas. Met with King Abdullah II.",-,,
+USA,W. BUSH,Qatar,Doha,4.6.2003,5.6.2003,"Met with Emir Hamad Thani, visited U.S. Central Command headquarters and 
+addressed U.S. military personnel. Overflew Baghdad en route to Qatar.",-,,
+USA,W. BUSH,Senegal,"Dakar, Goree Island",8.7.2003,8.7.2003,Met with President Wade.,-,,
+USA,W. BUSH,South Africa,Pretoria,8.7.2003,10.7.2003,Met with President Mbeki.,-,,
+USA,W. BUSH,Botswana,Gaborone,10.7.2003,10.7.2003,Met with President Mogae. Toured Mokoldi Nature Reserve.,-,,
+USA,W. BUSH,Uganda,Kampala,11.7.2003,11.7.2003,Met with President Musaveni.,-,,
+USA,W. BUSH,Nigeria,Abuja,11.7.2003,12.7.2003,Met with President Obasanjo.,-,,
+USA,W. BUSH,Japan,Tokyo,17.10.2003,18.10.2003,Met with Prime Minister Koizumi.,-,,
+USA,W. BUSH,Philippines,Manila,18.10.2003,19.10.2003,"Addressed a joint session of the Philippine Congress and met with President 
+Arroyo-Macapagal.",-,,
+USA,W. BUSH,Singapore,Singapore,21.10.2003,22.10.2003,Met with Prime Minister Goh Chok Tong.,-,,
+USA,W. BUSH,Indonesia,Denpasar (Bali),22.10.2003,22.10.2003,Met with President Sukarnoputri and Muslim religious leaders.,-,,
+USA,W. BUSH,Australia,Canberra,22.10.2003,22.10.2003,Met with Prime Minister Howard and addressed Parliament.,59,59,
+USA,OBAMA,Canada,Ottawa,19.2.2009,19.2.2009,Met with Prime Minister Harper.,88,68,
+USA,OBAMA,Turkey,"Ankara, Istanbul",5.4.2009,7.4.2009,"Met with President Gul and Prime Minister Erdogan; addressed the Grand 
+National Assembly.",-,,
+USA,OBAMA,Mexico,Mexico City,16.4.2009,17.4.2009,Met with President Calderon.,55,69,
+USA,OBAMA,Saudi Arabia,Riyadh,3.6.2009,4.6.2009,Met with King Abdullah.,-,,
+USA,OBAMA,Egypt,Cairo,4.6.2009,4.6.2009,Met with President Mubarak and delivered and address at Cairo University.,-,,
+USA,OBAMA,Germany,"Dresden, Weimar, Landstuhl",4.6.2009,5.6.2009,"Met with Chancellor Merkel, visited the Buchenwald concentration camp and 
+visited wounded U.S. military personnel.",93,64,
+USA,OBAMA,France,"Paris, Caen",5.6.2009,7.6.2009,"Met with President Sarkozy and dedicated the new visitor center at the U.S. 
+Military Cemetery in Normandy.",91,75,
+USA,OBAMA,Russia,Moscow,6.7.2009,8.7.2009,Met with President Medvedev and Prime Minister Putin.,37,44,
+USA,OBAMA,Vatican City,,10.7.2009,10.7.2009,Audience with Pope Benedict XVI.,-,,
+USA,OBAMA,Ghana,"Accra, Cape Coast",10.7.2009,11.7.2009,Met with President Mills and addressed Parliament.,,,
+USA,OBAMA,Mexico,Guadalajara,9.8.2009,10.8.2009,Attended the North American Leaders’ Summit.,55,69,
+USA,OBAMA,Denmark,Copenhagen,2.10.2009,2.10.2009,"Addressed a session of the International Olympic Committee and met with 
+Prime Minister Rasmussen.",-,,
+USA,OBAMA,Japan,Tokyo,13.11.2009,14.11.2009,Met with Emperor Akihito and Prime Minister Hatoyama.,85,59,
+USA,OBAMA,China,"Shanghai, Beijing",15.11.2009,18.11.2009,"Met with President Hu, National People’s Congress Chairman Wu, and Premier 
+Wen. Visited the Great Wall.",-,,
+USA,OBAMA,South Korea,"Osan, Seoul",18.11.2009,19.11.2009,Met with President Lee.,81,78,
+USA,OBAMA,Norway,Oslo,10.12.2009,11.12.2009,Met with King Harald V and Queen Sonja. Received the Nobel Peace Prize.,-,,
+USA,OBAMA,Czech Republic,Prague,8.4.2010,9.4.2010,"Signed Strategic Arms Reduction Treaty with Russia. Also met with the 
+Presidents of the Czech Republic, Estonia, Latvia, and Romania; and with 
+the Prime Ministers of Bulgaria, Croatia, the Czech Republic, Hungary, 
+Lithuania, Poland, Slovakia, and Slovenia.",SATU END,,
+USA,OBAMA,India,"Mumbai, New Delhi",6.11.2010,9.11.2010,"Attended U.S.-India Business and Entrepreneurship Summit in Mumbai. Met 
+with Prime Minister Singh and President Patil. Addressed the Indian 
+Parliament.",,,
+USA,OBAMA,Indonesia,Jakarta,9.11.2010,10.11.2010,Met with President Yudhoyono.,67,59,
+USA,OBAMA,Brazil,"Brasilia, Rio de Janeiro",19.3.2011,21.3.2011,Met with President Roussef.,63,62,
+USA,OBAMA,Chile,Santiago,21.3.2011,22.3.2011,Met with President Pinera.,,,
+USA,OBAMA,El Salvador,San Salvador,22.3.2011,23.3.2011,Met with President Funes.,,,
+USA,OBAMA,Ireland,"Dublin, Farmleigh, Moneygall",23.5.2011,23.5.2011,"Met with President McAleese and Prime Minister Kenny. Visited ancestral 
+home.",,,
+USA,OBAMA,United Kingdom,London,23.5.2011,26.5.2011,"Met with Queen Elizabeth II, Prime Minister Cameron, and Labour Party 
+leader Miliband.",75,61,
+USA,OBAMA,Poland,Warsaw,27.5.2011,28.5.2011,Met with President Komorowski and Prime Minister Tusk.,52,70,
+USA,TRUMP,Saudi Arabia,Riyadh,20.5.2017,22.5.2017,"Met with King Salman bin Abdel Aziz Al-Saud. Signed military sales 
+agreement. Met with leaders of the Gulf Cooperation Council.",NaN,,
+USA,TRUMP,Israel,Jerusalem,22.5.2017,23.5.2017,"Met with President Reuven Rivlin and Prime Minister Benjamin Netanyahu. 
+Visited the Western Wall and Yad Vashem.",56,81,
+USA,TRUMP,Palestinian Authority,Bethlehem,23.5.2017,23.5.2017,Met with President Mahmoud Abbas.,NaN,,
+USA,TRUMP,Italy,Rome,23.5.2017,24.5.2017,Met with Prime Minister Paolo Gentiloni.,25,61,
+USA,TRUMP,Vatican City,,24.5.2017,24.5.2017,Met with Pope Francis and Secretary of State Cardinal Pietro Parolin.,,,
+USA,TRUMP,Poland,Warsaw,5.7.2017,6.7.2017,"Met with President Andrzej Duda, delivered a public address, and addressed 
+the Three Seas Summit.",23,73,
+USA,TRUMP,France,Paris,13.7.2017,14.7.2017,"Official visit. Met with President Emmanuel Macron. Commemorated Bastille 
+Day and the entry of the United States into World War I.",14,46,
+USA,TRUMP,Japan,"Kawagoe, Tokyo",5.11.2017,7.11.2017,Met with Prime Minister Shinzo Abe and Emperor Akihito.,24,57,
+USA,TRUMP,South Korea,"Osan, Seoul",7.11.2017,8.11.2017,"Met with President Moon Jae-In. Visited U.S. Military personnel at 
+Garrisons Humphreys and Yongsan.",17,75,
+USA,TRUMP,China,Beijing,8.11.2017,10.11.2017,Met with President Xi Jinping. State Dinner.,,,
+USA,TRUMP,Singapore,Singapore,10.6.2018,13.6.2018,"Participated in the summit with North Korean leader Kim Jong-un and 
+bilateral events with Singaporean Prime Minister Lee Hsien Loong.",,,
+USA,TRUMP,United Kingdom,London,12.7.2018,13.7.2018,Met with Queen Elizabeth II and Prime Minister Theresa May.,28,50,
+USA,TRUMP,Finland,Helsinki,16.7.2018,16.7.2018,Bilateral meeting with Russian President Vladimir Putin.,11,Voice of the people,
+USA,TRUMP,France,Paris,10.11.2018,11.11.2018,"Commemorated the 100th anniversary of the end of the WWI and met with 
+French President Emmanuel Macron.",9,38,
+USA,TRUMP,Vietnam,Hanoi,26.2.2019,28.2.2019,"Attended a summit meeting with North Korean leader Kim Jong-un. Also met 
+with President Nguyễn Phú Trọng and Prime Minister Nguyễn Xuân Phúc. Trump 
+made a refueling stop at an airbase in Qatar on the trip to Vietnam.",65,Voice of the people,https://en.wikipedia.org/wiki/2019_North_Korea%E2%80%93United_States_Hanoi_Summit
+USA,TRUMP,Japan,Tokyo,25.5.2019,28.5.2019,State Visit. Met with Emperor Naruhito and Prime Minister Shinzō Abe.,30,67,
+USA,TRUMP,United Kingdom,"London,
+Portsmouth",3.6.2019,5.6.2019,"State Visit.[34] Met with Queen Elizabeth II and Prime Minister Theresa May. 
+Laid a wreath on the Tomb of the Unknown Warrior in Westminster Abbey. 
+Attended the 75th anniversary of D-Day commemorative ceremonies.",28,50,
+USA,TRUMP,Ireland,"Shannon,
+County Clare",5.6.2019,6.6.2019,"Met with Taoiseach Leo Varadkar. Spent one night at his International golf 
+resort in Doonbeg.",,,
+USA,TRUMP,France,"Colleville,
+Caen",6.6.2019,6.6.2019,"Met with President Emmanuel Macron. Attended the 75th anniversary of D-Day 
+memorial ceremonies. Visited the Normandy American Cemetery and Memorial.",9,38,
+USA,TRUMP,Ireland,"Shannon,
+County Clare",6.6.2019,7.6.2019,Spent one night at his International golf resort in Doonbeg.,,,
+USA,TRUMP,South Korea,"Seoul,
+Korean Demilitarized Zone",29.6.2019,30.6.2019,"Met with President Moon Jae-in. Visited the Korean Demilitarized Zone. 
+Attended the Koreas–United States DMZ Summit with President Moon and North 
+Korean leader Kim Jong-un at the Inter-Korean Freedom House on the southern 
+side of the Joint Security Area of the Korean Demilitarized Zone. Visited 
+U.S. troops at Osan Air Base.",44,80,
+USA,TRUMP,North Korea,Joint Security Area,30.6.2019,30.6.2019,"Briefly walked into the northern side of the Joint Security Area of the 
+Korean Demilitarized Zone, accompanied by North Korean leader Kim Jong-un, 
+becoming the first sitting U.S. president to enter North Korea.",,,
