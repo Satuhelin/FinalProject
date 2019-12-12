@@ -44204,10 +44204,10 @@ var height = 500 - margin.top - margin.bottom;
 var width = 900 - margin.left - margin.right;
 var svg = d3.select('#chart-3').append('svg').attr('height', height + margin.top + margin.bottom).attr('width', width + margin.left + margin.right).append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 var colorScale = d3.scaleLinear().domain([9, 100]).range(['#fee0d2', '#de2d26']);
-var projection = d3.geoMercator(); // out geoPath needs a PROJECTION variable
+var projection = d3.geoMercator().scale(110); // out geoPath needs a PROJECTION variable
 
 var path = d3.geoPath().projection(projection);
-var tip = d3.tip().attr('class', 'd3-tip d3-tip-scrolly').offset([50, 0]).html(function (d) {
+var tip = d3.tip().attr('class', 'd3-tip d3-tip-scrolly').offset([0, 0]).html(function (d) {
   return "".concat(d.properties.ADMIN, " <span style='color:yellow','font-size:10'><b>").concat(d.properties.trump_on_6, "</b></span>");
 });
 svg.call(tip);
@@ -44221,7 +44221,9 @@ function ready(json) {
   var countries = topojson.feature(json, json.objects.trump_only);
   console.log(json.objects.trump_only); //show where he has traveled
 
-  svg.selectAll('.country').data(countries.features).enter().append('path').attr('stroke', 'grey').attr('class', 'country').attr('d', path).attr('fill', function (d) {
+  svg.selectAll('.country').data(countries.features.filter(function (d) {
+    return d.SOVEREIGN !== "Antarctica";
+  })).enter().append('path').attr('stroke', 'grey').attr('class', 'country').attr('d', path).attr('fill', function (d) {
     if (d.properties.trump_on_1 === 'TRUMP') {
       return 'pink';
     }

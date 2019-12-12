@@ -24,14 +24,14 @@ const svg = d3
   .domain([9, 100])
   .range(['#fee0d2', '#de2d26'])
 
-const projection = d3.geoMercator()
+const projection = d3.geoMercator().scale(110)
 // out geoPath needs a PROJECTION variable
 const path = d3.geoPath().projection(projection)
 
 const tip = d3
   .tip()
   .attr('class', 'd3-tip d3-tip-scrolly')
-  .offset([50, 0])
+  .offset([0, 0])
   .html(function(d) {
     return `${d.properties.ADMIN} <span style='color:yellow','font-size:10'><b>${d.properties.trump_on_6}</b></span>`
   })
@@ -55,7 +55,7 @@ svg.call(tip)
 
   svg
     .selectAll('.country')
-    .data(countries.features)
+    .data(countries.features.filter(d => d.SOVEREIGN !== "Antarctica"))
     .enter()
     .append('path')
     .attr('stroke', 'grey')

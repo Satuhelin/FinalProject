@@ -241,7 +241,7 @@ p.caption {
         width: 100%;
         line-height: 1;
         color: rgba(0, 0, 0, 0.8);
-        position: absolute;
+       /* /* position: absolute; */
         pointer-events: none;
       }
       /* Northward tooltips */
