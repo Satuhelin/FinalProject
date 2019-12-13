@@ -9,7 +9,7 @@ const margin = { top: 0, left: 0, right: 0, bottom: 0 }
 
 const height = 500 - margin.top - margin.bottom
 
-const width = 900 - margin.left - margin.right
+const width = 1000 - margin.left - margin.right
 
 const svg = d3
   .select('#chart-3')
@@ -24,13 +24,14 @@ const svg = d3
   .domain([9, 100])
   .range(['#fee0d2', '#de2d26'])
 
-const projection = d3.geoMercator().scale(110)
+const projection = d3.geoMercator().scale(150)
 // out geoPath needs a PROJECTION variable
 const path = d3.geoPath().projection(projection)
 
 const tip = d3
   .tip()
   .attr('class', 'd3-tip d3-tip-scrolly')
+  .style('pointer-events', 'none')
   .offset([0, 0])
   .html(function(d) {
     return `${d.properties.ADMIN} <span style='color:yellow','font-size:10'><b>${d.properties.trump_on_6}</b></span>`
@@ -38,7 +39,8 @@ const tip = d3
 svg.call(tip)
 
 
-
+let tooltipElement = d3.select(".d3-tip-scrolly")
+d3.select("#chart-3").append(d => tooltipElement.node())
 
   d3.json(require('/data/trump_only'))  
   .then(ready)
@@ -67,10 +69,15 @@ svg.call(tip)
       }
       return 'lightgrey'
     })
-    .on('mouseover', tip.show)
+    .on('mouseover', function (d) {
+      tip.show.call(this, d)
+      let coords = d3.mouse(this)
+      d3.select(".d3-tip-scrolly")
+        .style('top', coords[1] + 'px')
+        .style('left', coords[0] + 'px')
+    })
     .on('mouseout', tip.hide)
-    svg.call(tip)
-  
+    
     
     
 
@@ -164,7 +171,7 @@ svg.call(tip)
     }) */
 
 
-  /* 
+   
     function render() {
       const svgContainer = svg.node().closest('div')
       const svgWidth = svgContainer.offsetWidth
@@ -179,7 +186,7 @@ svg.call(tip)
       // xPositionScale.range([0, newWidth])
       // yPositionScale.range([newHeight, 0])
       // // Update things you draw
-      projection.fitSize([newWidth, newHeight], countries)
+      projection.fitSize([newWidth, newHeight], countries).scale(150)
       svg.selectAll('path').attr('d', path)
       svg.selectAll('.countries').attr('transform', d => {
         const coords = projection([d.lng, d.lat])
@@ -197,5 +204,5 @@ svg.call(tip)
     window.addEventListener('resize', render)
     // And now that the page has loaded, let's just try
     // to do it once before the page has resized
-    render() */
-  }
+    render() 
+   }

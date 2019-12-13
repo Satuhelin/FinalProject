@@ -44201,16 +44201,20 @@ var margin = {
   bottom: 0
 };
 var height = 500 - margin.top - margin.bottom;
-var width = 900 - margin.left - margin.right;
+var width = 1000 - margin.left - margin.right;
 var svg = d3.select('#chart-3').append('svg').attr('height', height + margin.top + margin.bottom).attr('width', width + margin.left + margin.right).append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 var colorScale = d3.scaleLinear().domain([9, 100]).range(['#fee0d2', '#de2d26']);
-var projection = d3.geoMercator().scale(110); // out geoPath needs a PROJECTION variable
+var projection = d3.geoMercator().scale(150); // out geoPath needs a PROJECTION variable
 
 var path = d3.geoPath().projection(projection);
-var tip = d3.tip().attr('class', 'd3-tip d3-tip-scrolly').offset([0, 0]).html(function (d) {
+var tip = d3.tip().attr('class', 'd3-tip d3-tip-scrolly').style('pointer-events', 'none').offset([0, 0]).html(function (d) {
   return "".concat(d.properties.ADMIN, " <span style='color:yellow','font-size:10'><b>").concat(d.properties.trump_on_6, "</b></span>");
 });
 svg.call(tip);
+var tooltipElement = d3.select(".d3-tip-scrolly");
+d3.select("#chart-3").append(function (d) {
+  return tooltipElement.node();
+});
 d3.json(require('/data/trump_only')).then(ready).catch(function (err) {
   return console.log('Failed on', err);
 });
@@ -44229,8 +44233,11 @@ function ready(json) {
     }
 
     return 'lightgrey';
-  }).on('mouseover', tip.show).on('mouseout', tip.hide);
-  svg.call(tip); //Showing where he went
+  }).on('mouseover', function (d) {
+    tip.show.call(this, d);
+    var coords = d3.mouse(this);
+    d3.select(".d3-tip-scrolly").style('top', coords[1] + 'px').style('left', coords[0] + 'px');
+  }).on('mouseout', tip.hide); //Showing where he went
 
   d3.select('#first-step').on('stepin', function () {
     svg.selectAll('path').attr('fill', function (d) {
@@ -44304,40 +44311,39 @@ function ready(json) {
         svg.selectAll('text.' + className).attr('font-size', 15).style('visibility', 'hidden')
       }) */
 
-  /* 
-    function render() {
-      const svgContainer = svg.node().closest('div')
-      const svgWidth = svgContainer.offsetWidth
-      // Do you want it to be full height? Pick one of the two below
-      const svgHeight = height + margin.top + margin.bottom
-      // const svgHeight = window.innerHeight
-      const actualSvg = d3.select(svg.node().closest('svg'))
-      actualSvg.attr('width', svgWidth).attr('height', svgHeight)
-      const newWidth = svgWidth - margin.left - margin.right
-      const newHeight = svgHeight - margin.top - margin.bottom
-      // // Update our scale
-      // xPositionScale.range([0, newWidth])
-      // yPositionScale.range([newHeight, 0])
-      // // Update things you draw
-      projection.fitSize([newWidth, newHeight], countries)
-      svg.selectAll('path').attr('d', path)
-      svg.selectAll('.countries').attr('transform', d => {
-        const coords = projection([d.lng, d.lat])
-        return `translate(${coords})`
-      })
-        // // Update axes
-      // // svg.select('.x-axis').call(xAxis)
-      // svg.selectAll('.gdp-note-high').attr('x', newWidth * 0.75)
-      // svg.selectAll('.gdp-note-low').attr('x', newWidth * 0.25)
-      // svg.select('.y-axis').call(yAxis)
-      // svg.select('.y-axis .domain').remove()
-    }
-    // When the window resizes, run the function
-    // that redraws everything
-    window.addEventListener('resize', render)
-    // And now that the page has loaded, let's just try
-    // to do it once before the page has resized
-    render() */
+  function render() {
+    var svgContainer = svg.node().closest('div');
+    var svgWidth = svgContainer.offsetWidth; // Do you want it to be full height? Pick one of the two below
+
+    var svgHeight = height + margin.top + margin.bottom; // const svgHeight = window.innerHeight
+
+    var actualSvg = d3.select(svg.node().closest('svg'));
+    actualSvg.attr('width', svgWidth).attr('height', svgHeight);
+    var newWidth = svgWidth - margin.left - margin.right;
+    var newHeight = svgHeight - margin.top - margin.bottom; // // Update our scale
+    // xPositionScale.range([0, newWidth])
+    // yPositionScale.range([newHeight, 0])
+    // // Update things you draw
+
+    projection.fitSize([newWidth, newHeight], countries).scale(150);
+    svg.selectAll('path').attr('d', path);
+    svg.selectAll('.countries').attr('transform', function (d) {
+      var coords = projection([d.lng, d.lat]);
+      return "translate(".concat(coords, ")");
+    }); // // Update axes
+    // // svg.select('.x-axis').call(xAxis)
+    // svg.selectAll('.gdp-note-high').attr('x', newWidth * 0.75)
+    // svg.selectAll('.gdp-note-low').attr('x', newWidth * 0.25)
+    // svg.select('.y-axis').call(yAxis)
+    // svg.select('.y-axis .domain').remove()
+  } // When the window resizes, run the function
+  // that redraws everything
+
+
+  window.addEventListener('resize', render); // And now that the page has loaded, let's just try
+  // to do it once before the page has resized
+
+  render();
 }
 },{"d3":"../node_modules/d3/index.js","topojson":"../node_modules/topojson/index.js","d3-tip":"../node_modules/d3-tip/index.js","d3-svg-annotation":"../node_modules/d3-svg-annotation/indexRollupNext.js","http":"../node_modules/stream-http/index.js","/data/trump_only":"data/trump_only.json"}]},{},["scripts/chart-03.js"], null)
 //# sourceMappingURL=/chart-03.2001f349.js.map
